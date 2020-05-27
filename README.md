@@ -2,6 +2,8 @@
 
 <p align="center">Seriously, this is a super obnoxious browser source to use with your streaming software. Use it sparingly.</p>
 
+<p align="center"><a href="https://jsfiddle.net/63gc8nu7/">**Example**</a></p>
+
 <p align="center"><i><b>
   Crash on the interwebs<br>
   <a href="https://twitter.com/CrashKoeck">Twitter</a> |
