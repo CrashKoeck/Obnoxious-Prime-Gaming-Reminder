@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<meta charset="utf-8"/>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		<audio autoplay loop>
+			<source src="prime.mp3" type="audio/mpeg">
+		</audio>
+	</body>
+	<script type="text/javascript">
+	
+		var aDuration = 2;
+		var nImages = 320;
+		var i;
+		var randStartX;
+		var randMidX;
+		var randEndX;
+		var randStartArr = [125,-125];
+		var randStartY;
+		var randMidY;
+		var randEndY;
+		var aniDelay;
+		var imgClass;
+		
+		
+		$("head").append('<style type="text/css"></style>');
+		var newStyleElement = $("head").children(':last');
+		newStyleElement.html('body{margin:0px;overflow:hidden;}');
+		newStyleElement.append('img{transform: translate(-50%, -50%);position:absolute;animation-timing-function:ease;animation-duration:' + aDuration + 's;animation-iteration-count:infinite;animation-direction:alternate;}');
+		
+		for(i = 0; i < nImages; i++){
+			imgClass = "Img00" + i;
+			randStartX = randStartArr[Math.round(Math.random())];
+			randStartY = randStartArr[Math.round(Math.random())];
+			randMidX = 
+			randEndX = Math.random() * 101;
+			randEndY = Math.random() * 101;
+			aniDelay = 1 + (i / (nImages / 10));
+			$("body").append('<img src="prime.png" class="' + imgClass + '">')
+			newStyleElement.append('.' + imgClass + '{position:fixed;left: ' + randStartX + '%;top:' + randStartY + '%;animation-name:' + imgClass + 'Ani;animation-delay:' + aniDelay + 's;}');
+			newStyleElement.append('@keyframes ' + imgClass + 'Ani{50%{left:' + randEndX + '%;top:' + randEndY + '%;}100%{left:' + randStartY + '%;top:' + randStartX + '%;}}');
+		}
+
+	</script>
+</html>
