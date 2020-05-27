@@ -22,4 +22,12 @@
 ## How to modify
 - You can replace `prime.png` with your own image file
 - You can replace `prime.mp3` with your own mp3 file
-- You can change how many images are on scene at a time by editing the `
+- You can change how many images are on scene at a time by editing the `nImages` variable in `prime.html`
+
+## Future Plans
+- None really. This is as good as it gets.
+
+***
+
+## Support
+- Be sure to join the <a href="https://discord.gg/zyS2jbJ">CrashPad Discord</a> for direct support
