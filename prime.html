@@ -32,8 +32,8 @@
 			imgClass = "Img00" + i;
 			randStartX = randStartArr[Math.round(Math.random())];
 			randStartY = randStartArr[Math.round(Math.random())];
-			randEndX = Math.round(Math.random() * 101);
-			randEndY = Math.round(Math.random() * 101);
+			randEndX = Math.random() * 101;
+			randEndY = Math.random() * 101;
 			aniDelay = 1 + (i / (nImages / 10));
 			$("body").append('<img src="prime.png" class="' + imgClass + '">')
 			newStyleElement.append('.' + imgClass + '{position:fixed;left: ' + randStartX + '%;top:' + randStartY + '%;animation-name:' + imgClass + 'Ani;animation-delay:' + aniDelay + 's;}');
