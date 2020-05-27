@@ -13,8 +13,13 @@
 
 ***
 
-## How To Use
-- <a href="https://github.com/CrashKoeck/Kruiz-Control-Configurator/releases">Download Kruiz-Control-Configurator.exe</a> and place it in your Kruiz Control folder (the same folder as index.html)
-- Run Kruiz-Control-Configurator.exe
-- Fill in the blanks
-- Have a great show!
+## How to use
+- Download the latest *Source Code (zip)* file from <a href="https://github.com/CrashKoeck/Obnoxious-Twitch-Prime-Reminder/releases">this page</a>
+- Extract the *zip* file on your computer
+- Add `prime.html` as a browser source and check `Shutdown source when not visible` and `Refresh browser when scene becomes active`
+- Use sparingly
+
+## How to modify
+- You can replace `prime.png` with your own image file
+- You can replace `prime.mp3` with your own mp3 file
+- You can change how many images are on scene at a time by editing the `
